@@ -1,6 +1,10 @@
+#WELCOME PAGE
+
 import streamlit as st
 
-st.set_page_config(page_title="Ur Mom", layout= "wide")
 
-st.subheader("Home")
+
+st.title("Home")
+st.subheader("Hacker CS Girls in Code")
+
 st.write("hot cs girlies cult")
