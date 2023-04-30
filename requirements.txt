@@ -2,6 +2,10 @@
 
 streamlit
 gspread
+#google_spreadsheet
+#google-auth-oauthlib
+#pandas
+
 #openpyxl
 #plotly-express
 #Image
