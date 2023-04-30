@@ -15,7 +15,19 @@ st.set_page_config(
   #  }
 )
 
-st.balloons()
+#_create_option(
+#    "theme.primaryColor"
+#    description="FFE5EC"
+#)
+
+from streamlit_extras.let_it_rain import rain
+
+rain(
+    emoji="💻",
+    font_size=54,
+    falling_speed=7,
+    animation_length=4,
+)
 
 st.title("hack.her\n")
 st.subheader("👋 Hi there!")
