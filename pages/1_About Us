@@ -1,0 +1,28 @@
+#ABOUT-US PAGE
+
+import streamlit as st
+
+st.set_page_config(
+    page_title="About The Team",
+    page_icon="👩‍💻",
+    layout="wide",
+)
+
+st.title("Learn More About The Team!\n")
+st.write("---")
+
+st.subheader("Medha Sarkar (she/her)")
+st.write("Medha is a second-year Economics student with a minor in computer science with passions in learning new data visualization/cleansing softwares and techniques, mentoring business students in career development workshops, and working on a capstone project involving music production. She is interested in data analytics and consulting, and in the future would like to be a strategy or technology consultant, bridging the gap between data and business processes.\n")
+
+st.subheader("Madison Juliana Olivia (she/her)")
+st.write("Madison Juliana (MJ) is a second year Computational Mathematics major with interests in machine learning and data structures through her professor mentored research in the field. She also creates personal projects involving photography, graphic design, and video production. MJ’s career goals are to pursue a graduate degree in mathematics to continue her passions for research.\n")
+
+st.subheader("Vaneesha Singh (she/her)")
+st.write("Vaneesha is a second year Computer Science with Business Applications student interested in data structures and software engineering. She is excited to pick up new skills from hackathons and learn more about web development and new coding languages. In the future, she hopes to work in the tech industry and build new applications.\n")
+
+st.subheader("Lily Caplon-Guin (she/her)")
+st.write("Lily is a second year Bioengineering major passionate about biomechanics and tissue engineering. Over the years she has developed many skills from various courses, undergraduate research labs, and projects. She is currently an undergraduate researcher in faculty-mentored research with the UCR department of Evolutionary Ecology and Organismal Biology, and spends her time exploring the natural sciences and engineering.\n")
+
+st.write("---")
+st.subheader("Our Mission: ")
+st.write("hack.her was created to foster connections and create opportunities for women in computer science, a significantly male dominated field. The founders were inspired to create this project when they noticed how scared they felt to talk to anyone in their classes, and how few women they encountered. hack.her ensures that no woman will feel alone, matching them up with mentors and creating a safe space to talk to their peers. The resources that hack.her provides on hackathons, coding classes, and coding related majors allows for easily accessible information to further academic development. Although hack.her is centered around people identifying as women, it is open and helpful to anyone regardless of gender identity.\n")
