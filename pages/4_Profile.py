@@ -6,8 +6,6 @@ from appwrite.services.users import Users
 
 # json web token - jwt
 
-    
-
 #set up client
 client = (Client()
     .set_endpoint('https://[HOSTNAME_OR_IP]/v1') # Your API Endpoint
