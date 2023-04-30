@@ -39,7 +39,5 @@ hackNum = st.number_input()
 #submitted button
 isFinished = st.button('Submit')
 
-#if isFinished == True:
-    
-
-
+if isFinished == True:
+    st.write("Your profile has been recorded! Please log in on the Log In page.")
