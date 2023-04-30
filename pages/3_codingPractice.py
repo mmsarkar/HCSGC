@@ -3,7 +3,7 @@
 import streamlit as st
 
 st.set_page_config(
-    title="Level up your code!"
+    page_title="Level up your code!"
 )
 
 st.header("Practice Coding!")
