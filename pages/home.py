@@ -1,20 +1,49 @@
 #WELCOME PAGE
 
+import requests
 import streamlit as st
+from streamlit_lottie import st_lottie
 from st_on_hover_tabs import on_hover_tabs
+
 
 st.set_page_config(
     page_title="hack.her",
     page_icon="👩‍💻",
     layout="wide",
-    initial_sidebar_state="expanded",
-
-    #menu_items={
-       # 'Learning Resources': 'https://www.extremelycoolapp.com/help',
-      #  'Report a bug': "https://www.extremelycoolapp.com/bug",
-    #    'About': "# This is a header. This is an *extremely* cool app!"
-  #  }
+    initial_sidebar_state="expanded"
 )
+
+st.balloons()
+
+st.title("hack.her\n")
+st.header("👋 Hi there!")
+st.header("💻 Welcome to the official hacking hub for girls who like to code!\n")
+
+def load_lottieurl(url):
+  r = requests.get(url)
+  if r.status_code != 200:
+    return None
+  return r.json()
+
+lottie_coding = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_w51pcehl.json")
+
+with st.container(): 
+  st.write("---")
+  left_column, right_column = st.columns(2)
+  with left_column:
+    st.subheader("A safe space for girls interested in computer science to:")
+    st.write(
+      """
+      -grow their computer science skillset
+      -find resources to learn about different coding languages
+      -gain information about hackathons
+      -connect with other girls with the same passions
+      """  
+    )
+  with right_column:
+    st_lottie(lottie_coding, height = 250, key = "coding")
+
+#sidebar
 
 st.header("Custom tab component for on-hover navigation bar")
 #st.markdown('<style>' + open('./style.css').read() + '<style>', unsafe_allow_html=True)
@@ -25,31 +54,3 @@ with st.sidebar:
 if tabs == 'Home':
   st.title("Home")
   st.write('Name of option is {}'.format(tabs))
-
-st.balloons()
-
-#_create_option(
-#    "theme.primaryColor"
-#    description="FFE5EC"
-#)
-
-from streamlit_extras.let_it_rain import rain
-
-rain(
-    emoji="💻",
-    font_size=54,
-    falling_speed=7,
-    animation_length="infinity",
-)
-
-st.title("hack.her\n")
-st.subheader("👋 Hi there!")
-st.subheader("💻 Welcome to the official hacking hub for girls who like to code!\n")
-
-st.write("A safe space for girls interested in computer science to build their computer science skillset, ")
-st.write("find resources to learn more about different coding languages, gain information about hackathons, ")
-st.write("and most importantly, connect with other girls with the same passions.\n")
-
-#st.image(https://today.ttu.edu/posts/2021/09/Images/Woman-Computer-2-lg.jpg)
-
-#sidebar
