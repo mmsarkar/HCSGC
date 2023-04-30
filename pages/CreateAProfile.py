@@ -1,7 +1,8 @@
 # where the user input will be gotten
 import streamlit as st
-from tkinter import *
-from tkinter.ttk import *
+#from tkinter import *
+#from tkinter.ttk import *
+import gspread
 
 #def nextPage():
 #    ws.destroy()
