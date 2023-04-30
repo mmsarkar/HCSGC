@@ -28,6 +28,20 @@ if tabs == 'Home':
 
 st.balloons()
 
+#_create_option(
+#    "theme.primaryColor"
+#    description="FFE5EC"
+#)
+
+from streamlit_extras.let_it_rain import rain
+
+rain(
+    emoji="💻",
+    font_size=54,
+    falling_speed=7,
+    animation_length="infinity",
+)
+
 st.title("hack.her\n")
 st.subheader("👋 Hi there!")
 st.subheader("💻 Welcome to the official hacking hub for girls who like to code!\n")
