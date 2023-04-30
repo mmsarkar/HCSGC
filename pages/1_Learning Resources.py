@@ -110,4 +110,3 @@ languageChoice = st.selectbox(
        ("C++", "C", "Python", "Java", "JavaScript", "Swift", "R"),)
 if languageChoice == "C++":
     st.subheader("Resources for C++")
-
