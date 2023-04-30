@@ -3,6 +3,8 @@
 import requests
 import streamlit as st
 from streamlit_lottie import st_lottie
+from st_on_hover_tabs import on_hover_tabs
+
 
 st.set_page_config(
     page_title="hack.her",
@@ -40,3 +42,15 @@ with st.container():
     )
   with right_column:
     st_lottie(lottie_coding, height = 250, key = "coding")
+
+#sidebar
+
+st.header("Custom tab component for on-hover navigation bar")
+#st.markdown('<style>' + open('./style.css').read() + '<style>', unsafe_allow_html=True)
+
+with st.sidebar:
+  tabs = on_hover_tabs(tabName=['Home', 'Learning Resources', 'Calendar', 'Coding Practice', 'Profile'], default_choice = 0)
+
+if tabs == 'Home':
+  st.title("Home")
+  st.write('Name of option is {}'.format(tabs))

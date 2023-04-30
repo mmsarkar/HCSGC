@@ -1,9 +1,11 @@
 # where the user input will be gotten
 import streamlit as st
+from tkinter import *
+from tkinter.ttk import *
 
-def nextPage():
-    ws.destroy()
-    import SubmittedPage
+#def nextPage():
+#    ws.destroy()
+#   import SubmittedPage
 
 st.title("Create a Profile")
 
@@ -38,4 +40,4 @@ hackNum = st.number_input()
 isFinished = st.button('Submit')
 
 if isFinished == True:
-    nextPage()
+    st.write("Your profile has been recorded! Please log in on the Log In page.")
