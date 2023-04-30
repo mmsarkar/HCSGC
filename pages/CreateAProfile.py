@@ -39,5 +39,7 @@ hackNum = st.number_input()
 #submitted button
 isFinished = st.button('Submit')
 
-if isFinished == True:
-    nextPage()
+#if isFinished == True:
+    
+
+
