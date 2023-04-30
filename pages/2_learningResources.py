@@ -1,6 +1,8 @@
 #RESOURCES PAGE
 
 import streamlit as st
+import gspread
+from gspread_dataframe import get_as_dataframe, set_with_dataframe
 
 st.set_page_config(
     title="Learning Resources"

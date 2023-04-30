@@ -46,6 +46,12 @@ if codingSelect == "c++":
         st.code(code1, language='c++')
         st.write("There are certain built-in libraries that a programmer can include in their code to do certain actions.")
         st.write("For example, if someone wanted to calculate 2 to the power of 3, we would have to multiply 2 on itself multiple times. But if we included the csmath library, there is already a exponential operation")
+        st.write("Here, we include the iostream library, because it gives us the cout command, which we will explain soon.")
+        st.write("To include a library, we use #include followed by the library name surrounded by <>")
+
+        code2 = '''using namespace std;'''
+        st.write("Important names of variables and other objects must be written with \"std::\" in front if it to be recognized by the compiler, like the following example.")
+        st.write("This means that the compiler will know what important symbols are without preluding them with \"std::\"")
 
         
 
