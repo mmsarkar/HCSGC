@@ -1,9 +1,11 @@
 # where the user input will be gotten
 import streamlit as st
+from tkinter import *
+from tkinter.ttk import *
 
-def nextPage():
-    ws.destroy()
-    import SubmittedPage
+#def nextPage():
+#    ws.destroy()
+#   import SubmittedPage
 
 st.title("Create a Profile")
 
