@@ -1,4 +1,4 @@
-section[data-testid='stSidebar'] {
+/* section[data-testid='stSidebar'] {
     background-color: #111;
     min-width:unset !important;
     width: unset !important;
@@ -12,12 +12,12 @@ button[kind="header"] {
 }
 
 @media(hover){
-    /* header element to be removed */
+    /* header element to be removed */ /*
     header[data-testid="stHeader"] {
         display:none;
     }
 
-    /* The navigation menu specs and size */
+    /* The navigation menu specs and size */ /*
     section[data-testid='stSidebar'] > div {
         height: 100%;
         width: 95px;
@@ -43,7 +43,7 @@ button[kind="header"] {
     width: 300px;
     }
 
-    /* The button on the streamlit navigation menu - hidden */
+    /* The button on the streamlit navigation menu - hidden *//*
     button[kind="header"] {
         display: none;
     }
@@ -55,4 +55,4 @@ button[kind="header"] {
         width:15rem;
     }
 }
- 
+  */ 

@@ -17,7 +17,7 @@ codingSelect = st.selectbox(
 if codingSelect == "c++":
     st.subheader("Leveling up c++")
 
-    level1Done, level2Done, level3Done = false
+    level1Done, level2Done, level3Done = False
     levelChoice = st.selectbox(
         "Choose a level:",
         ("Level 1", "Level 2", "Level 3"),
