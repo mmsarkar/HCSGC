@@ -1,4 +1,4 @@
-#RESOURCES PAGE#RESOURCES PAGE
+#RESOURCES PAGE
 
 import streamlit as st
 import gspread
