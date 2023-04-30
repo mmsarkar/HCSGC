@@ -57,3 +57,4 @@ with right_column:
   st_lottie(lottie_coding, height = 250, key = "coding")
 
 
+
