@@ -6,7 +6,7 @@ import pandas as pd
 from gspread_dataframe import get_as_dataframe, set_with_dataframe
 
 st.set_page_config(
-    title="Learning Resources"
+    page_title="Learning Resources"
 )
 
 

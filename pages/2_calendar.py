@@ -4,7 +4,7 @@ import streamlit as st
 
 
 st.set_page_config(
-    title="Events"
+    page_title="Events"
 )
 
 st.title("Upcoming Events")
