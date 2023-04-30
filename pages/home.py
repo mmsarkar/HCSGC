@@ -26,7 +26,7 @@ rain(
     emoji="💻",
     font_size=54,
     falling_speed=7,
-    animation_length=4,
+    animation_length="infinity",
 )
 
 st.title("hack.her\n")
