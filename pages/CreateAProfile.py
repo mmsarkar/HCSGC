@@ -40,4 +40,4 @@ hackNum = st.number_input()
 isFinished = st.button('Submit')
 
 if isFinished == True:
-    nextPage()
+    st.write("Your profile has been recorded! Please log in on the Log In page.")
