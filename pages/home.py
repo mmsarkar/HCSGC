@@ -2,8 +2,12 @@
 
 import requests
 import streamlit as st
+
 from streamlit_lottie import st_lottie
 from st_on_hover_tabs import on_hover_tabs
+
+with st.sidebar:
+    tabs = on_hover_tabs(tabName=['Home', 'Learn', 'Calendar', 'Profile', 'Code'])
 
 
 st.set_page_config(
