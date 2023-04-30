@@ -1,0 +1,6 @@
+Download the following:
+    streamlit
+    gspread
+    streamlit-extras
+    pandas
+    streamlit-on-Hover-tabs
