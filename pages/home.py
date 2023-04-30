@@ -5,23 +5,24 @@ import streamlit as st
 # from streamlit_lottie import st_lottie
 from st_on_hover_tabs import on_hover_tabs
 
-#sidebar
-st.header("Custom tab component for on-hover navigation bar")
-#st.markdown('<style>' + open('./style.css').read() + '<style>', unsafe_allow_html=True)
-
-with st.sidebar:
-  tabs = on_hover_tabs(tabName=['Home', 'Learning Resources', 'Calendar', 'Coding Practice', 'Profile'], default_choice = 0)
-
-if tabs == 'Home':
-  st.title("Home")
-  st.write('Name of option is {}'.format(tabs))
-
 st.set_page_config(
     page_title="hack.her",
     page_icon="👩‍💻",
     layout="wide",
     initial_sidebar_state="expanded"
 )
+
+#sidebar
+st.header("Custom tab component for on-hover navigation bar")
+#st.markdown('<style>' + open('./style.css').read() + '<style>', unsafe_allow_html=True)
+
+with st.sidebar:
+  tabs = on_hover_tabs(tabName=['Home', 'Learning Resources', 'Calendar', 'Coding Practice', 'Profile'], 
+    iconName=['home', 'learning resources', 'calendar', 'coding practice', 'profile'], default_choice = 0)
+
+if tabs == 'Home':
+  st.title("Home")
+  st.write('Name of option is {}'.format(tabs))
 
 st.balloons()
 
